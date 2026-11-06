@@ -22,6 +22,8 @@ jobs:
 
       - name: Installer le SDK Android
         uses: android-actions/setup-android@v3
+        with:
+          packages: 'platform-tools platforms;android-34 build-tools;34.0.0'
 
       - name: Générer le wrapper Gradle
         working-directory: MythoCards
